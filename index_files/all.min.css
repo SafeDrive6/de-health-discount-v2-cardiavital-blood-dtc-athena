@@ -1,0 +1,2206 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+html {
+	scroll-behavior: smooth
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	outline: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-family: Roboto,sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: .5px;
+	color: #001b2f
+}
+
+a,button {
+	border: none;
+	outline: 0;
+	cursor: pointer;
+	color: inherit;
+	text-decoration: none;
+	-webkit-text-decoration-style: none;
+	text-decoration-style: none;
+	-webkit-transition: all .45s ease;
+	-o-transition: all ease .45s;
+	transition: all .45s ease;
+	background: 0 0
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1170px
+}
+
+.container1440 {
+	margin: 0 auto;
+	max-width: 1440px;
+	padding: 0 20px
+}
+
+.container1350 {
+	max-width: 1350px;
+	padding: 0 30px
+}
+
+.container1350,.container980 {
+	position: relative;
+	margin: 0 auto
+}
+
+.container980 {
+	max-width: 1020px;
+	padding: 0 20px
+}
+
+.title {
+	font-family: Oswald,sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 71px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #001b2f
+}
+
+.title mark {
+	background: #ffe8e9;
+	padding: 0 5px
+}
+
+.text {
+	font-size: 24px;
+	line-height: 30px
+}
+
+.btn {
+	padding: 20px 30px;
+	background: #349eff;
+	border-radius: 3px;
+	font-family: Montserrat,sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	letter-spacing: .01em;
+	text-transform: uppercase;
+	color: #fff
+}
+
+.btn:hover {
+	background: #c1e6ff;
+	color: initial
+}
+
+.show-for-mobile,.show-for-tablet,.show-for-tablet-menu {
+	display: none
+}
+
+header {
+	width: 100%;
+	background: hsla(0,0%,93%,.31);
+	-webkit-backdrop-filter: blur(14px);
+	backdrop-filter: blur(14px);
+	padding: 10px 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1
+}
+
+.header-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+
+.header-container,nav {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+nav {
+	min-width: 660px
+}
+
+.header-logo {
+	max-width: 200px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-item-align: center;
+	align-self: center
+}
+
+.header-logo img {
+	max-width: 100%
+}
+
+.nav-link {
+	font-family: Oswald,sans-serif;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: .01em;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	padding: 0 20px;
+	min-height: 60px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.nav-link:hover {
+	color: #5b6673
+}
+
+.header-menu-btn {
+	display: none
+}
+
+header .link-btn-buy {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
+}
+
+header .show-for-tablet-menu {
+	display: none
+}
+
+main {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto
+}
+
+.flex-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start
+}
+
+.welcome {
+	overflow: hidden;
+	width: 100%;
+	background: url('../index_files/welcome.png') top/cover no-repeat
+}
+
+.welcome-container {
+	padding: 155px 20px 120px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.welcome-title {
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	margin: 20px 0 0;
+	background: rgba(52,158,255,.62);
+	padding: 10px;
+	color: #fff!important;
+	text-transform: lowercase
+}
+
+.welcome-card-container {
+	padding: 100px 0 0
+}
+
+.welcome-card {
+	max-width: 210px;
+	background: rgba(92,146,197,.56);
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+	border-radius: 10px;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: .5px;
+	color: #fff;
+	padding: 20px;
+	margin: 0 20px 0 0
+}
+
+.welcome-card img {
+	display: block;
+	margin: 0 auto
+}
+
+.welcome-card p {
+	padding: 15px 0 0
+}
+
+.order-form {
+	position: relative;
+	background: #fff;
+	-webkit-box-shadow: 0 20px 50px rgba(0,0,0,.15);
+	box-shadow: 0 20px 50px rgba(0,0,0,.15);
+	border-radius: 10px;
+	max-width: 360px
+}
+
+.order-form-top {
+	padding: 18px 18px 30px;
+	background: #c72d3f;
+	border-radius: 10px;
+	width: 100%;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	color: #fff
+}
+
+.order-form-top h4 {
+	padding: 0 0 10px
+}
+
+.countdown {
+	font-size: 25px;
+	line-height: 1
+}
+
+.wv_order-form {
+	padding: 30px 40px 60px
+}
+
+.country_select {
+	/* visibility:hidden!important; */
+	/* height:0; */
+	/* overflow:hidden; */
+	/* width:0; */
+	/* position:absolute; */
+}
+
+.order-form-price {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 0 0 20px
+}
+
+.order-form-price .new-price {
+	font-size: 50px;
+	line-height: 1;
+	letter-spacing: 2px;
+	color: #001b2f
+}
+
+.order-form-price .old-price {
+	position: relative;
+	font-size: 36px;
+	line-height: 42px;
+	letter-spacing: .02em;
+	color: #b1b9c6
+}
+
+.order-form-price .old-price:before {
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	left: 50%;
+	top: 50%;
+	background: #b1b9c6;
+	-webkit-transform: translate(-50%,-50%) rotate(-15deg);
+	-ms-transform: translate(-50%,-50%) rotate(-15deg);
+	transform: translate(-50%,-50%) rotate(-15deg);
+	-webkit-transform-origin: center;
+	-ms-transform-origin: center;
+	transform-origin: center
+}
+
+.order-form-price .wv_discount {
+	position: absolute;
+	top: 50%;
+	right: -40px;
+	-webkit-transform: translateY(calc(-50% - 10px));
+	-ms-transform: translateY(calc(-50% - 10px));
+	transform: translateY(calc(-50% - 10px));
+	background: #349eff;
+	border-radius: 5px 0 0 5px;
+	padding: 20px 14px;
+	font-size: 27px;
+	line-height: 1;
+	letter-spacing: .01em;
+	color: #fff
+}
+
+::-webkit-input-placeholder {
+	font-family: Open Sans,sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: .005em;
+	color: #5b6673
+}
+
+::-moz-placeholder {
+	font-family: Open Sans,sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: .005em;
+	color: #5b6673
+}
+
+:-ms-input-placeholder,::-ms-input-placeholder {
+	font-family: Open Sans,sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: .005em;
+	color: #5b6673
+}
+
+::placeholder {
+	font-family: Open Sans,sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: .005em;
+	color: #5b6673
+}
+
+.form-input-block {
+	position: relative
+}
+
+.form-input-img {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+
+.wv_name, .wv_phone, select {
+	width: 100%;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 3px;
+	font-family: Open Sans,sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: .005em;
+	color: #000;
+	padding: 14px 14px 14px 37px;
+	margin: 5px auto;
+	outline: 0
+}
+
+.form-input:focus {
+	border: 1px solid #444
+}
+
+.form-checkbox {
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 20px;
+	font-family: Open Sans,sans-serif;
+	font-size: 10px;
+	line-height: 14px;
+	color: #6c6c6c
+}
+
+.form-checkbox .checkbox {
+	position: relative;
+	opacity: 1;
+	pointer-events: auto;
+	border: 1px solid #5dc9d4;
+	background: #fff;
+	width: 18px;
+	height: 18px
+}
+
+.form-checkbox a {
+	max-width: calc(100% - 20px);
+	color: inherit;
+	padding: 0 0 0 15px;
+	-webkit-text-decoration-line: none;
+	text-decoration-line: none
+}
+
+.form-checkbox a:hover {
+	-webkit-text-decoration-line: underline;
+	text-decoration-line: underline
+}
+
+.order-form-btn-buy {
+	padding: 20px;
+	width: 100%
+}
+
+.health {
+	background: #fff6f5;
+	padding: 100px 0;
+	overflow: hidden
+}
+
+.health-item {
+	max-width: 30%;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-height: 400px;
+	padding: 0 10px 0 0
+}
+
+.health-item:first-child {
+	max-width: 520px
+}
+
+.health-item:first-child p {
+	max-width: 480px
+}
+
+.health-item:nth-child(2n) {
+	max-width: 330px
+}
+
+.problems {
+	padding: 100px 0
+}
+
+.problems-container {
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	padding: 78px 0 0
+}
+
+.problems-image {
+	max-width: 50%
+}
+
+.problems-image img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%
+}
+
+.problems-content {
+	max-width: 50%;
+	padding: 0 0 0 30px
+}
+
+.problems-content h3 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: .01em
+}
+
+.problems-list {
+	padding: 20px 0;
+	list-style: none;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: .5px
+}
+
+.problems-list li {
+	position: relative;
+	padding: 10px 0 10px 50px
+}
+
+.problems-list li:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 30px;
+	height: 30px;
+	background: url('https://de10.cardiobalanceoriginal.com/img/cancel-icon.svg') 50%/contain no-repeat
+}
+
+.advice {
+	padding: 40px 0 70px;
+	background: #c1e6ff
+}
+
+.advice-image {
+	max-width: 360px;
+	margin: -10% 0 -22%
+}
+
+.advice-image img {
+	width: 100%
+}
+
+.advice-content {
+	max-width: 600px
+}
+
+.advice-content p {
+	padding: 0 0 20px
+}
+
+.advice-btn-link {
+	display: block;
+	margin: 0;
+	max-width: -webkit-fit-content;
+	max-width: -moz-fit-content;
+	max-width: fit-content
+}
+
+.composition {
+	background: #c1e6ff;
+	position: relative;
+	z-index: 1
+}
+
+.composition .container1350 {
+	margin: 0 0 0 auto;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.composition-container {
+	width: 80%;
+	margin: 0 auto 0 0;
+	padding: 100px 0;
+	background: #fff;
+	border-radius: 0 30px 0 0
+}
+
+.composition-content {
+	max-width: 690px
+}
+
+.composition-content p {
+	font-weight: 300
+}
+
+.composition-title {
+	padding: 0 0 35px
+}
+
+.composition-title mark {
+	background: #deefff!important
+}
+
+.swiper-container {
+	padding: 50px 0 0
+}
+
+.component {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	padding: 40px 20px;
+	max-width: calc(100% - 100px);
+	height: 310px;
+	background: #deefff;
+	border-radius: 20px;
+	overflow: hidden
+}
+
+.component h5 {
+	font-family: Oswald,sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: .01em;
+	text-transform: uppercase
+}
+
+.component h5,.component p {
+	max-width: 50%;
+	text-align: right
+}
+
+.component p {
+	font-size: 16px;
+	line-height: 22px
+}
+
+.component1 {
+	background: url('https://de10.cardiobalanceoriginal.com/img/component1.png') 0 100%/auto no-repeat,#deefff
+}
+
+.component2 {
+	background: url('https://de10.cardiobalanceoriginal.com/img/component2.png') 0 100%/auto no-repeat,#deefff
+}
+
+.component3 {
+	background: url('https://de10.cardiobalanceoriginal.com/img/component3.png') 0 100%/auto no-repeat,#deefff
+}
+
+.component4 {
+	background: url('https://de10.cardiobalanceoriginal.com/img/component4.png') 0 100%/auto no-repeat,#deefff
+}
+
+.component5 {
+	background: url('https://de10.cardiobalanceoriginal.com/img/component5.png') 0 100%/auto no-repeat,#deefff
+}
+
+.component6 {
+	background: url('https://de10.cardiobalanceoriginal.com/img/component6.png') 0 100%/auto no-repeat,#deefff
+}
+
+.component7 {
+	background: url('https://de10.cardiobalanceoriginal.com/img/component7.png') 0 100%/auto no-repeat,#deefff
+}
+
+.composition-slider-pagination {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	position: relative;
+	padding: 20px;
+	max-width: calc(100% - 100px)
+}
+
+.swiper-button-next,.swiper-button-prev {
+	position: relative;
+	top: auto;
+	left: auto;
+	right: auto;
+	bottom: auto;
+	margin: 0;
+	cursor: pointer;
+	-webkit-transition: all .45s ease;
+	-o-transition: all ease .45s;
+	transition: all .45s ease
+}
+
+.swiper-button-next:after,.swiper-button-prev:after {
+	content: ""
+}
+
+.swiper-button-next:hover path,.swiper-button-prev:hover path {
+	fill: #b1b9c6
+}
+
+.swiper-pagination {
+	padding: 0 30px;
+	position: relative
+}
+
+.swiper-pagination-bullet {
+	margin: 0 4px;
+	background: #b1b9c6;
+	-webkit-transition: all .45s ease;
+	-o-transition: all ease .45s;
+	transition: all .45s ease
+}
+
+.swiper-pagination-bullet-active {
+	background: #000
+}
+
+.composition-image {
+	max-width: calc(100% - 690px);
+	min-width: 380px
+}
+
+.composition-image img {
+	max-width: 100%
+}
+
+.expert {
+	background: #c1e6ff;
+	position: relative;
+	z-index: 1
+}
+
+.expert .container1350 {
+	margin: 0 0 0 auto
+}
+
+.expert-container {
+	width: 80%;
+	margin: 0 auto 0 0;
+	padding: 60px 0 100px;
+	background: #fff
+}
+
+.expert-title {
+	text-align: center;
+	padding: 0 0 90px
+}
+
+.expert-title mark {
+	background: #deefff!important
+}
+
+.expert-image {
+	max-width: 570px
+}
+
+.expert-image img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%
+}
+
+.expert-content {
+	max-width: 50%;
+	padding: 0 80px
+}
+
+.research {
+	padding: 60px 0 160px
+}
+
+.research-title {
+	padding: 0 0 100px
+}
+
+.research-content {
+	max-width: calc(50% - 15px);
+	background: #ffe8e9;
+	border-radius: 20px;
+	padding: 30px;
+	min-height: 360px
+}
+
+.research-content h5 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px
+}
+
+.expert-research {
+	background: #f4f9fc
+}
+
+.expert-research-container {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.expert-research-content {
+	max-width: 690px;
+	padding: 40px 0
+}
+
+.expert-research-image {
+	max-width: 50%;
+	margin: -60px 0 -4px
+}
+
+.customers {
+	padding: 100px 0 30px
+}
+
+.customers-title {
+	text-align: center;
+	padding: 0 0 30px
+}
+
+.customers-title mark {
+	background: #deefff!important
+}
+
+.customers-container {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+
+.customer-card {
+	max-width: calc((100% - 60px)/ 3);
+	padding: 50px 0
+}
+
+.customer-image {
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start
+}
+
+.customer-image .name {
+	padding: 0 0 0 20px
+}
+
+.customer-comment {
+	margin: 15px 0 0;
+	padding: 20px;
+	background: #f4f9fc;
+	border-radius: 10px
+}
+
+.choose {
+	padding: 100px 0 160px;
+	background: url('https://de10.cardiobalanceoriginal.com/img/choose-product-bg.png') 50%/cover no-repeat
+}
+
+.choose-section {
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start
+}
+
+.choose-content {
+	max-width: calc(50% - 15px)
+}
+
+.choose-title {
+	padding: 0 0 40px
+}
+
+.choose-btn-link {
+	display: block;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	margin: 50px 0 0
+}
+
+.choose-subtitle {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	padding: 0 0 15px
+}
+
+.choose-card-container {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+
+.choose-card {
+	background: rgba(92,146,197,.2);
+	border: 2px solid rgba(150,188,223,.76);
+	-webkit-backdrop-filter: blur(22px);
+	backdrop-filter: blur(22px);
+	border-radius: 10px;
+	padding: 15px;
+	margin: 15px 0;
+	max-width: calc(50% - 15px);
+	min-height: 140px
+}
+
+.how-use {
+	padding: 160px 0
+}
+
+.how-use-content {
+	max-width: 50%
+}
+
+.how-use-title {
+	padding: 0 0 50px
+}
+
+.how-use-title mark {
+	background: #deefff!important
+}
+
+.how-use-image {
+	max-width: calc(50% - 50px)
+}
+
+.how-use-image img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%
+}
+
+.how-use-attention {
+	max-width: 600px;
+	margin: 40px 0 0;
+	padding: 30px;
+	background: #f4f9fc;
+	border: 2px solid #c1e6ff;
+	border-radius: 20px
+}
+
+.how-use-attention ul {
+	list-style: none
+}
+
+.how-use-attention ul li {
+	padding: 20px 0 0
+}
+
+.how-buy {
+	background: #c1e6ff
+}
+
+.how-buy-container {
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end
+}
+
+.how-buy-image {
+	margin: -87px 0 0 auto;
+	max-width: 50%
+}
+
+.how-buy-image img {
+	display: block;
+	margin: 0 0 0 auto
+}
+
+.how-buy-content {
+	max-width: 50%;
+	padding: 40px 0
+}
+
+.order {
+	overflow: hidden;
+	padding: 124px 0 100px;
+	background: url('https://de10.cardiobalanceoriginal.com/img/footer.png') 50%/cover no-repeat
+}
+
+.order-content {
+	width: calc(100% - 420px)
+}
+
+.order-title {
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	font-family: Oswald,sans-serif;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 71px;
+	letter-spacing: 2px;
+	padding: 10px;
+	background: rgba(222,239,255,.82)
+}
+
+.order-image {
+	position: relative;
+	padding: 15px 0 0
+}
+
+.order-image img {
+	max-width: 100%;
+	display: block;
+	margin: 0 0 0 auto
+}
+
+.order-discount {
+	position: absolute;
+	top: -58px;
+	right: -26px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: #c72d3f;
+	width: 158px;
+	height: 158px;
+	border-radius: 50%;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 59px;
+	text-align: center;
+	letter-spacing: .01em;
+	color: #fff
+}
+
+footer {
+	background: #deefff;
+	padding: 43px 0 33px
+}
+
+.footer-container {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.footer-image {
+	max-width: 230px
+}
+
+.footer-image img {
+	max-width: 100%
+}
+
+.footer-content {
+	max-width: calc(100% - 230px);
+	padding: 0 0 0 40px
+}
+
+.footer-content a {
+	font-weight: 700
+}
+
+.footer-content a:hover {
+	text-decoration: underline
+}
+
+.popup-modal {
+	position: fixed;
+	z-index: 4;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,.65)
+}
+
+.comebacker-modal,.popup-modal2 {
+	display: none
+}
+
+.popup-flex-container {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%
+}
+
+.comebacker,.popup-flex-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.comebacker {
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	margin: 0 auto;
+	padding: 40px 60px 40px 0;
+	max-width: 930px;
+	z-index: 2;
+	position: relative;
+	background: #fff;
+	border-radius: 10px
+}
+
+.comebacker .wv_order-form {
+	padding: 0
+}
+
+.comebacker .order-discount {
+	top: 0;
+	right: auto;
+	left: 60px;
+	width: 124px;
+	height: 124px;
+	font-size: 40px;
+	line-height: 1
+}
+
+.comebacker .popup-image img {
+	max-width: 100%
+}
+
+.comebacker .popup-content {
+	max-width: 50%;
+	padding: 0 0 0 30px
+}
+
+.comebacker .popup-image {
+	max-width: 50%;
+	position: relative
+}
+
+.popup {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0;
+	width: 930px;
+	z-index: 2;
+	position: relative;
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden
+}
+
+.popup .popup-image {
+	width: 50%;
+	min-height: 600px;
+	background: url('https://de10.cardiobalanceoriginal.com/img/popup-bg.png') 50%/cover no-repeat
+}
+
+.popup .popup-content {
+	max-width: 50%;
+	padding: 40px 60px 40px 30px
+}
+
+.popup .wv_order-form {
+	padding: 0
+}
+
+.popup-close {
+	padding: 2px;
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	cursor: pointer
+}
+
+.popup-close:hover path {
+	stroke: #349eff
+}
+
+.popup-title {
+	padding: 0 0 10px;
+	font-size: 28px;
+	line-height: 41px
+}
+
+.popup-title mark {
+	background: #deefff!important
+}
+
+.popup-subtitle {
+	padding: 0 0 30px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px
+}
+
+.header-scroll {
+	width: 100%;
+	position: fixed;
+	top: -100px;
+	left: 0;
+	-webkit-transition: all .45s ease;
+	-o-transition: all .45s ease;
+	transition: all .45s ease;
+	-webkit-transform: translateY(100px);
+	-ms-transform: translateY(100px);
+	transform: translateY(100px);
+	z-index: 3;
+	background: #92c7f8;
+	-webkit-box-shadow: 0 20px 50px rgba(0,0,0,.15);
+	box-shadow: 0 20px 50px rgba(0,0,0,.15)
+}
+
+.header-active {
+	z-index: 2
+}
+
+.header-default {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2
+}
+
+@media screen and (max-width: 1460px) {
+	.container1440 {
+			max-width:100%;
+			padding: 0 30px
+	}
+
+	.welcome-container {
+			padding: 155px 30px 120px
+	}
+
+	header {
+			padding: 10px 0
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.composition-container,.expert-container {
+			width:90%
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	header .link-btn-buy {
+			padding:10px;
+			-ms-flex-item-align: center;
+			align-self: center;
+			background: url('https://de10.cardiobalanceoriginal.com/img/buy-icon.svg') 50%/18px no-repeat,#349eff;
+			min-width: 38px;
+			min-height: 38px
+	}
+
+	header .link-btn-buy p {
+			display: none
+	}
+
+	header .link-btn-buy:hover {
+			background: url('https://de10.cardiobalanceoriginal.com/img/buy-icon.svg') 50%/18px no-repeat,#c1e6ff
+	}
+
+	header .show-for-tablet-menu {
+			display: block;
+			margin: 30px auto;
+			padding: 20px 30px;
+			background: #349eff
+	}
+
+	header .show-for-tablet-menu p {
+			display: block
+	}
+
+	header .show-for-tablet-menu:hover {
+			background: #c1e6ff
+	}
+
+	.header-container {
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap
+	}
+
+	nav {
+			display: none!important;
+			min-width: 100%;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column
+	}
+
+	.header-menu-btn,.header-menu-btn-container {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center
+	}
+
+	.header-menu-btn {
+			width: 30px;
+			height: 30px;
+			margin: 0 30px
+	}
+
+	.header-menu-btn:hover rect {
+			fill: #007aff
+	}
+
+	.header-active nav {
+			margin: 20px -20px 0;
+			display: -webkit-box!important;
+			display: -ms-flexbox!important;
+			display: flex!important;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			width: calc(100% + 40px)
+	}
+
+	.header-active .nav-link {
+			width: 100%;
+			border-bottom: 1px solid #deefff
+	}
+
+	.header-active .nav-link:hover {
+			background: #fff
+	}
+
+	.composition-container,.expert-container {
+			width: 95%
+	}
+
+	.composition-content {
+			max-width: 580px
+	}
+
+	.expert-content {
+			padding: 0 30px
+	}
+
+	.order-image {
+			padding: 60px 0 0
+	}
+
+	.order-discount {
+			top: 0;
+			right: -26px
+	}
+}
+
+@media screen and (max-width: 1040px) {
+	.container980 {
+			max-width:100%;
+			padding: 0 30px
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	.show-for-tablet {
+			display:block
+	}
+
+	.welcome-container {
+			padding: 170px 30px 40px;
+			-webkit-box-align: start;
+			-ms-flex-align: start;
+			align-items: flex-start
+	}
+
+	.welcome-title {
+			font-size: 32px;
+			line-height: 43px;
+			margin: 20px auto 0
+	}
+
+	.welcome-content {
+			max-width: calc(100% - 360px)
+	}
+
+	.welcome-card-container {
+			padding: 60px 0
+	}
+
+	.order-form {
+			max-width: 344px
+	}
+
+	.health {
+			padding: 70px 0
+	}
+
+	.health-container {
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap
+	}
+
+	.health-item {
+			max-width: calc(50% - 10px);
+			min-height: -webkit-fit-content;
+			min-height: -moz-fit-content;
+			min-height: fit-content;
+			padding: 0
+	}
+
+	.health-item:first-child {
+			max-width: 100%
+	}
+
+	.health-item:first-child p {
+			padding: 30px 0 50px;
+			max-width: 100%
+	}
+
+	.health-item:nth-child(2n) {
+			max-width: calc(50% + 10px);
+			padding: 0 20px 0 0
+	}
+
+	.problems {
+			padding: 70px 0
+	}
+
+	.problems-container {
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			padding: 50px 0 0
+	}
+
+	.problems-image {
+			max-width: 100%
+	}
+
+	.problems-content {
+			max-width: 100%;
+			padding: 30px 0 0
+	}
+
+	.advice {
+			padding: 20px 0
+	}
+
+	.advice-image {
+			max-width: 40%
+	}
+
+	.advice-content {
+			max-width: 60%
+	}
+
+	.composition-container,.expert-container {
+			width: 90%;
+			padding: 70px 0 0
+	}
+
+	.composition-content {
+			max-width: 100%
+	}
+
+	.composition-image {
+			display: none
+	}
+
+	.expert .container1350 {
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap
+	}
+
+	.expert-title {
+			text-align: left;
+			padding: 0 0 50px 30px
+	}
+
+	.expert-image {
+			max-width: 100%;
+			width: 100%
+	}
+
+	.expert-content {
+			max-width: 100%;
+			padding: 40px 0
+	}
+
+	.research {
+			padding: 70px 0 40px
+	}
+
+	.research-title {
+			padding: 0 0 50px
+	}
+
+	.research-container {
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap
+	}
+
+	.research-content {
+			max-width: 100%;
+			padding: 30px;
+			min-height: -webkit-fit-content;
+			min-height: -moz-fit-content;
+			min-height: fit-content;
+			margin: 0 0 30px
+	}
+
+	.expert-research-content {
+			padding: 50px 0 30px
+	}
+
+	.expert-research-content p {
+			font-size: 14px;
+			line-height: 19px
+	}
+
+	.customers {
+			padding: 70px 0
+	}
+
+	.customer-card {
+			max-width: calc((100% - 20px)/ 2);
+			padding: 18px 0
+	}
+
+	.choose {
+			padding: 50px 0;
+			background: url('https://de10.cardiobalanceoriginal.com/img/choose-product-bg-mobile.png') 50%/cover no-repeat
+	}
+
+	.choose-section {
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap
+	}
+
+	.choose-content {
+			max-width: 100%;
+			padding: 20px 0
+	}
+
+	.choose-btn-link {
+			margin: 20px auto 0
+	}
+
+	.choose-card {
+			margin: 10px 0;
+			max-width: calc(50% - 10px);
+			width: calc(50% - 10px)
+	}
+
+	.how-use {
+			padding: 70px 0
+	}
+
+	.how-use-container {
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center
+	}
+
+	.how-use-attention,.how-use-content {
+			max-width: 100%
+	}
+
+	.how-use-image {
+			padding: 50px 0;
+			max-width: 100%
+	}
+
+	.how-buy-content {
+			padding: 60px 0;
+			max-width: 60%
+	}
+
+	.how-buy-image {
+			margin: 0 0 0 -30%;
+			max-width: 40%
+	}
+
+	.order {
+			background: 0 0;
+			padding: 70px 0 60px
+	}
+
+	.order-content {
+			width: calc(100% - 360px)
+	}
+
+	.product-logo {
+			max-width: 100%
+	}
+
+	.order-title {
+			font-size: 29px;
+			line-height: 43px
+	}
+
+	.order-image {
+			margin: 0 -30px
+	}
+
+	.order-image img {
+			margin: 0 auto
+	}
+
+	.order-discount {
+			top: 50px;
+			right: 50px;
+			width: 98px;
+			height: 98px;
+			font-size: 30px;
+			line-height: 36px
+	}
+
+	.footer-container {
+			-webkit-box-align: start;
+			-ms-flex-align: start;
+			align-items: flex-start
+	}
+}
+
+@media screen and (max-width: 970px) {
+	.comebacker {
+			max-width:calc(100% - 40px)
+	}
+
+	.comebacker .order-discount {
+			width: 98px;
+			height: 98px;
+			font-size: 30px
+	}
+
+	.popup {
+			width: calc(100% - 40px)
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.show-for-mobile {
+			display:block
+	}
+
+	.title {
+			font-size: 28px;
+			line-height: 41px
+	}
+
+	.container1350,.container1440,.container980 {
+			padding: 0 20px
+	}
+
+	.header-logo {
+			max-width: 130px
+	}
+
+	nav {
+			display: none
+	}
+
+	.link-btn-buy {
+			padding: 10px
+	}
+
+	.welcome {
+    background: url('https://de10.cardiobalanceoriginal.com/img/welcome-mobile.png') top center/contain no-repeat;
+}
+
+	.welcome-container {
+			padding: 100% 20px 40px;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			display: block;
+	}
+
+	.welcome-content {
+			max-width: 100%;
+			width: 100%
+	}
+
+	.welcome-title {
+			font-size: 2.05em;
+			line-height: 1;
+			margin: 0 auto 70px;
+			text-align: center
+	}
+
+	.welcome-card-container {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			padding: 30px 0
+	}
+
+	.welcome-card {
+			width: 100%;
+			margin: 0 auto 15px
+	}
+
+	.order-form,.welcome-card {
+			max-width: 100%
+	}
+
+	.health {
+			padding: 50px 0
+	}
+
+	.health-container {
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center
+	}
+
+	.health-item {
+			max-width: 100%;
+			padding: 15px 0
+	}
+
+	.health-item p {
+			padding: 20px 0 0
+	}
+
+	.health-item .health-men,.health-item .health-women,.health-item img {
+			margin: 0 auto
+	}
+
+	.health-item:first-child p {
+			padding: 30px 0 0;
+			font-size: inherit;
+			line-height: inherit
+	}
+
+	.health-item:nth-child(2n) {
+			max-width: 100%;
+			padding: 0;
+			padding: 15px 0
+	}
+
+	.problems {
+			padding: 50px 0
+	}
+
+	.problems-container,.problems-content {
+			padding: 40px 0 0
+	}
+
+	.problems-content h3,.problems-content p {
+			font-size: inherit;
+			line-height: inherit
+	}
+
+	.problems-list {
+			padding: 15px 0
+	}
+
+	.problems-list li {
+			padding: 5px 0 5px 40px
+	}
+
+	.problems-list li:before {
+			width: 25px;
+			height: 25px
+	}
+
+	.advice {
+			padding: 30px 0
+	}
+
+	.advice-content {
+			max-width: 100%
+	}
+
+	.advice-btn-link {
+			margin: 0 auto;
+			max-width: 100%;
+			width: 100%
+	}
+
+	.advice-image {
+			display: none
+	}
+
+	.composition {
+			background: 0 0
+	}
+
+	.composition p {
+			font-size: inherit;
+			line-height: inherit
+	}
+
+	.composition-container,.expert-container {
+			width: 100%;
+			padding: 50px 0 20px;
+			margin: 0 auto;
+			background: 0 0;
+			border-radius: 0
+	}
+
+	.swiper-container {
+			padding: 40px 0 0
+	}
+
+	.component {
+			-webkit-box-pack: start;
+			-ms-flex-pack: start;
+			justify-content: flex-start;
+			padding: 40px 20px;
+			max-width: 100%;
+			border-radius: 20px
+	}
+
+	.component1 {
+			background: url('https://de10.cardiobalanceoriginal.com/img/component1.png') 0 100%/70% no-repeat,#deefff
+	}
+
+	.component2 {
+			background: url('https://de10.cardiobalanceoriginal.com/img/component2.png') 0 100%/70% no-repeat,#deefff
+	}
+
+	.component3 {
+			background: url('https://de10.cardiobalanceoriginal.com/img/component3.png') 0 100%/70% no-repeat,#deefff
+	}
+
+	.component4 {
+			background: url('https://de10.cardiobalanceoriginal.com/img/component4.png') 0 100%/70% no-repeat,#deefff
+	}
+
+	.component5 {
+			background: url('https://de10.cardiobalanceoriginal.com/img/component5.png') 0 100%/70% no-repeat,#deefff
+	}
+
+	.component6 {
+			background: url('https://de10.cardiobalanceoriginal.com/img/component6.png') 0 100%/70% no-repeat,#deefff
+	}
+
+	.component7 {
+			background: url('https://de10.cardiobalanceoriginal.com/img/component7.png') 0 100%/70% no-repeat,#deefff
+	}
+
+	.composition-slider-pagination {
+			padding: 20px;
+			max-width: 100%;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center
+	}
+
+	.expert {
+			background: 0 0
+	}
+
+	.expert-title {
+			text-align: left;
+			padding: 0 0 40px 20px
+	}
+
+	.expert-content {
+			padding: 30px 0
+	}
+
+	.research {
+			padding: 20px 0
+	}
+
+	.research-title {
+			padding: 0 0 40px
+	}
+
+	.research-content {
+			max-width: 100%;
+			padding: 20px 10px;
+			margin: 0 0 25px;
+			font-size: 16px;
+			line-height: 22px
+	}
+
+	.research-content h5 {
+			font-size: 18px;
+			line-height: 24px
+	}
+
+	.expert-research {
+			padding: 50px 0 0
+	}
+
+	.expert-research-container {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column
+	}
+
+	.expert-research-content {
+			max-width: 100%;
+			padding: 0 0 15px
+	}
+
+	.expert-research-image {
+			max-width: 100%;
+			margin: 0 auto -4px
+	}
+
+	.expert-research-image img {
+			max-width: 100%
+	}
+
+	.customers {
+			padding: 60px 0
+	}
+
+	.customers-container {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column
+	}
+
+	.customer-card {
+			max-width: 100%;
+			padding: 18px 0
+	}
+
+	.choose {
+			padding: 30px 0;
+			background: url('https://de10.cardiobalanceoriginal.com/img/choose-product-bg.png') bottom/100% auto no-repeat,#deefff
+	}
+
+	.choose-title {
+			padding: 0 0 30px
+	}
+
+	.choose-content {
+			margin: 0 auto;
+			font-size: 14px;
+			line-height: 19px
+	}
+
+	.choose-content .text {
+			font-size: 18px;
+			line-height: 24px
+	}
+
+	.choose-card-container {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column
+	}
+
+	.choose-card {
+			margin: 0 auto 15px;
+			max-width: 100%;
+			width: 100%
+	}
+
+	.choose-btn-link {
+			width: 100%
+	}
+
+	.how-use {
+			padding: 60px 0
+	}
+
+	.how-use .text {
+			font-size: inherit;
+			line-height: inherit
+	}
+
+	.how-use-title {
+			padding: 0 0 30px
+	}
+
+	.how-use-attention {
+			margin: 0 auto;
+			padding: 15px
+	}
+
+	.how-use-attention ul li {
+			padding: 15px 0 0
+	}
+
+	.how-use-attention img {
+			max-width: 40px
+	}
+
+	.how-buy-container {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: reverse;
+			-ms-flex-direction: column-reverse;
+			flex-direction: column-reverse
+	}
+
+	.how-buy-content {
+			padding: 50px 0 0;
+			max-width: 100%
+	}
+
+	.how-buy-content .text {
+			font-size: inherit;
+			line-height: inherit
+	}
+
+	.how-buy-image {
+			margin: 0 -20px;
+			max-width: 100%
+	}
+
+	.how-buy-image img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%
+	}
+
+	.order {
+			padding: 50px 0
+	}
+
+	.order-container {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center
+	}
+
+	.order-content {
+			width: 100%
+	}
+
+	.product-logo {
+			display: block;
+			margin: 0 auto 10px
+	}
+
+	.order-title {
+			text-align: center;
+			margin: 10px auto 0
+	}
+
+	.order-discount {
+			top: 50px;
+			right: calc(50% - 150px);
+			width: 98px;
+			height: 98px;
+			font-size: 30px;
+			line-height: 36px
+	}
+
+	.footer-container {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center
+	}
+
+	.footer-content {
+			max-width: 100%;
+			padding: 40px 0 0
+	}
+
+	.popup-flex-container {
+			-webkit-box-pack: start;
+			-ms-flex-pack: start;
+			justify-content: flex-start;
+			-webkit-box-align: start;
+			-ms-flex-align: start;
+			align-items: flex-start
+	}
+
+	.comebacker {
+			max-width: 100%;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			border-radius: 0;
+			padding: 40px 20px
+	}
+
+	.comebacker .popup-content,.comebacker .popup-image {
+			max-width: 100%;
+			padding: 0
+	}
+
+	.popup {
+			width: 100%;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			border-radius: 0
+	}
+
+	.popup .popup-image {
+			width: 100%;
+			min-height: 250px;
+			background: url('https://de10.cardiobalanceoriginal.com/img/popup-bg.png') 50%/cover no-repeat;
+	}
+
+	.popup .popup-content {
+			max-width: 100%;
+			padding: 40px 20px
+	}
+}
+
+@media screen and (max-width: 407px) {
+	.welcome-title {
+			font-size:2.05rem
+	}
+}
+
+@media screen and (max-width: 373px) {
+	.welcome-title {
+			margin:0 auto 40px
+	}
+
+	.wv_order-form {
+			padding: 30px 20px 60px
+	}
+
+	.wv_order-form .wv_discount {
+			right: -20px
+	}
+}
